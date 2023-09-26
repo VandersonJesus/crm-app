@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
+  public title:string = "Welcome to CRM"
+  public subTitle:string ="App to register all earnings, expenses and investments"
+
   constructor() { }
 
   ngOnInit() {

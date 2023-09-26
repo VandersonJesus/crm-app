@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import {Location} from '@angular/common';
+
 
 @Component({
   selector: 'app-title',
@@ -7,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class TitleComponent {
 
+  constructor(private location: Location) {}
+
+  @Input() title: string = '';
+  @Input() subtitle: string = '';
+  @Input() no?: string;
+  @Input() centerText?: boolean = false;
+
+  onBack(): void {
+    this.location.back()
+  }
 }

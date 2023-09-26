@@ -6,6 +6,6 @@ import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 @NgModule({
   declarations: [TitleComponent],
   imports: [CommonModule, NzPageHeaderModule],
-  exports: [NzPageHeaderModule],
+  exports: [NzPageHeaderModule, TitleComponent],
 })
 export class SharedModule {}
