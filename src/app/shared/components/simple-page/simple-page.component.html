@@ -1,0 +1,18 @@
+<div id="container">
+  <app-title
+    no="{{ number }}"
+    title="{{ title }}"
+    subtitle="{{ subtitle }}"
+    [centerText]="centerText"
+  ></app-title>
+
+  <button
+    nz-button
+    nzType="primary"
+    (click)="buttonClicked()"
+    [disabled]="buttonDisabled"
+  >
+    <span *ngIf="icon" nz-icon nzType="search"></span>
+    {{ buttonText }}
+  </button>
+</div>

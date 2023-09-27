@@ -1,1 +1,11 @@
-<app-title [title]="this.title" [subtitle]="this.subTitle"></app-title>
+<app-simple-page
+  [title]="this.title"
+  [subtitle]="this.subTitle"
+  buttonText="Welcome"
+  icon="plus-circle"
+></app-simple-page>
+
+<button nz-button nzType="primary" (click)="buttonClicked()">
+  <span nz-icon nzType="search"></span>
+  Create Customer
+</button>
